@@ -73,10 +73,52 @@ body{
 
 
 
+/* faq start  */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+    background:#c6e0f0;
+    color: #373d42;
+}
 
+.accordion-item button{
+    font-weight: bold;
+    font-size: 20px;
+    color: #373d42;
+}
 
+.accordion-body{
+    color: rgb(134, 128, 128);
+    font-size: 18px;
+}
+/* faq end  */
 
+/* company start */
+.company_image{
+    /* border: 1px solid red; */
+    margin: 10px;
+}
+/* company end */
 
+/* fotoer start */
+footer{
+    background: rgb(20, 20, 20);
+}
+
+.footer_social_icon i{
+    margin: 10px;
+    
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border:1px solid #312f2f;
+    transition: all .3s ease-in-out;
+}
+
+.footer_social_icon i:hover{
+    background: #312f2f;
+}
+/* fotoer end */
 
 /* media query start */
 @media screen and (max-width:1200px) {
@@ -96,6 +138,13 @@ body{
 @media screen and (max-width:500px) {
    .carousel-caption h5{
     font-size: 25px;
+   }
+
+   .company_image{
+    display: block;
+   }
+   .company_image img{
+    display: block;
    }
 }
 /* media query end */
